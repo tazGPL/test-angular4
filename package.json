@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "czesc": "echo Czesc",
-    "deploy": "gh-pages -d dist/facebook"
+    "predeploy": "ng build --base-href=/test-angular4/",
+    "deploy": "gh-pages -d dist/facebook",
+    "postdeploy": "echo Zrobione :-]"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +23,7 @@
     "@angular/platform-browser": "~8.0.3",
     "@angular/platform-browser-dynamic": "~8.0.3",
     "@angular/router": "~8.0.3",
+    "bootstrap": "^4.3.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
