@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  postsUrl: '/test-angular4/assets/posts.json'
 };

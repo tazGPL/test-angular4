@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "czesc": "echo Czesc",
-    "predeploy": "ng build --base-href=/test-angular4/",
+    "predeploy": "ng build --prod --base-href=/test-angular4/",
     "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/facebook",
     "postdeploy": "echo Zrobione :-]"
   },
