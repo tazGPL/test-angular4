@@ -21,4 +21,11 @@ export class PostsService {
     )
     .toPromise();
   }
+
+  async getPostById(postId: string) {
+    const posts = await this.getPosts();
+    return posts.find((post) => {
+        return post.id === postId;
+    });
+  }
 }
