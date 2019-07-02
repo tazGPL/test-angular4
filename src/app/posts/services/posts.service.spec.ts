@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { PostsService } from './posts.service';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 
 describe('PostsService', () => {
 
@@ -36,9 +36,9 @@ describe('getPosts', () => {
      const response = service.getPosts();
 
      const server = httpMock.expectOne(environment.postsUrl);
-     server.flush([
-       { id: 'fake-id', body: 'fake-body'}
-     ]);
+     server.flush({
+       posts: [{ id: 'fake-id', body: 'fake-body'}]
+     });
 
     const posts = await response;
     expect(posts.length).toEqual(1);
