@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IPostList } from '../../interfaces/post-list.interface';
 
 @Component({
   selector: 'app-post-list',
@@ -7,11 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostListComponent implements OnInit {
 
-  postList = [
-    { id: 'asdasdsad', body: "Mam fajnego psa", author: { name: 'Piotr'}},
-    { id: 'asdasdfdsad', body: "Mam fajnego kota", author: { name: 'Grzegorz'}},
-    { id: 'asdasssssssdsad', body: "Mam fajnego jeża", author: { name: 'Jola'}}
-  ];
+  @Input() posts: IPostList = null;
 
   constructor() { }
 

@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "czesc": "echo Czesc",
     "predeploy": "ng build --base-href=/test-angular4/",
-    "deploy": "gh-pages -d dist/facebook",
+    "deploy": "cross-env NODE_DEBUG=gh-pages gh-pages -d dist/facebook",
     "postdeploy": "echo Zrobione :-]"
   },
   "private": true,
@@ -37,6 +37,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
