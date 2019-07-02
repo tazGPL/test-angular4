@@ -1,5 +1,85 @@
-[
-    { "id": "asdasdsad", "body": "Mam fajnego psa", "author": { "name": "Piotr"}},
-    { "id": "asdasdfdsad", "body": "Mam fajnego kota", "author": { "name": "Grzegorz"}},
-    { "id": "asdasssssssdsad", "body": "Mam fajnego jeża", "author": { "name": "Jola"}}
-]
+{
+    "posts": [
+      {
+        "id": "e37cb1f9-8dcb-5e64-ba64-9976c1a812f0",
+        "created_time": "Tue May 28 2019 10:37:06 GMT+0200 (czas środkowoeuropejski letni)",
+        "author": {
+          "id": "66557850-1ede-513e-b7f2-3a8d52e5fd13",
+          "name": "Sedrick Russel",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/kaysix_dizzy/128.jpg"
+        },
+        "body": "Otuvupwog idvivguw camu ligtuw tepgo kamistab jeb giwfizaz ji agdevoka hikdames bi vip lucwev al huz.",
+        "images": [
+          "https://picsum.photos/id/117/300/150/",
+          "https://picsum.photos/id/910/300/150/",
+          "https://picsum.photos/id/164/300/150/",
+          "https://picsum.photos/id/853/300/150/"
+        ]
+      },
+      {
+        "id": "6a434c61-316d-579c-920b-75407175522f",
+        "created_time": "Sat Jul 21 2018 23:07:28 GMT+0200 (czas środkowoeuropejski letni)",
+        "author": {
+          "id": "25477a85-a579-544e-9dd5-f43d9de2fd64",
+          "name": "Milford Harvey",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/axel/128.jpg"
+        },
+        "body": "Godjegmog vezwu gubapu caderso voraz wipaw adetef mezve ilaluig kutiw wimnuibi mimle.",
+        "images": [
+          "https://picsum.photos/id/757/300/150/",
+          "https://picsum.photos/id/810/300/150/"
+        ]
+      },
+      {
+        "id": "eb6db3e3-396f-5322-b9a7-fdb2abb48f5e",
+        "created_time": "Tue Mar 26 2019 02:45:19 GMT+0100 (czas środkowoeuropejski standardowy)",
+        "author": {
+          "id": "16ee3078-3250-5af4-8aca-220375b3b836",
+          "name": "Dayne Jast",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/prinzadi/128.jpg"
+        },
+        "body": "Dutbec wiggedna lowlevmiw cokda goohuju siluskaj am diegolo huw idu wanuvev aw tulepte esenekil.",
+        "images": [
+          "https://picsum.photos/id/937/300/150/",
+          "https://picsum.photos/id/65/300/150/",
+          "https://picsum.photos/id/357/300/150/",
+          "https://picsum.photos/id/478/300/150/",
+          "https://picsum.photos/id/873/300/150/"
+        ]
+      },
+      {
+        "id": "b2bed70c-531d-5c2d-b3eb-d8bef548b2eb",
+        "created_time": "Sun May 26 2019 11:47:44 GMT+0200 (czas środkowoeuropejski letni)",
+        "author": {
+          "id": "f7b1dd16-3484-51ee-9417-bbb693be74f8",
+          "name": "Myra Gulgowski",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/michzen/128.jpg"
+        },
+        "body": "Bujhozgiw voghu bukpo gefepri nizcuni busigi gi nac ofmejup ma jisoslid az lab daghum davigra rohmow hin.",
+        "images": [
+          "https://picsum.photos/id/872/300/150/",
+          "https://picsum.photos/id/984/300/150/",
+          "https://picsum.photos/id/240/300/150/",
+          "https://picsum.photos/id/720/300/150/",
+          "https://picsum.photos/id/918/300/150/"
+        ]
+      },
+      {
+        "id": "a5d22e14-61da-5317-af02-229d565d2d83",
+        "created_time": "Mon Oct 15 2018 17:11:35 GMT+0200 (czas środkowoeuropejski letni)",
+        "author": {
+          "id": "2f1d0c63-a375-59eb-8c9d-10c128b0f495",
+          "name": "Joany Kuhn",
+          "avatar_url": "https://s3.amazonaws.com/uifaces/faces/twitter/davecraige/128.jpg"
+        },
+        "body": "Me dep tu gube imoabwaj mawerfom co nuzukhu debug bi jawwik amopa kevriaja ed ceh sin odbid.",
+        "images": [
+          "https://picsum.photos/id/645/300/150/",
+          "https://picsum.photos/id/135/300/150/",
+          "https://picsum.photos/id/860/300/150/",
+          "https://picsum.photos/id/676/300/150/",
+          "https://picsum.photos/id/269/300/150/"
+        ]
+      }
+    ]
+  }
