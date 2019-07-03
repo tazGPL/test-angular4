@@ -1,0 +1,18 @@
+<nav class="navbar mb-3">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a
+                routerLink="/users/profile/details"
+                routerLinkActive="bg-light"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="nav-link">Szczegóły</a>
+            </li>
+            <li>
+                <a
+                    routerLink="/users/profile/posts" 
+                    routerLinkActive="bg-light" 
+                    class="nav-link">Posty użytkownika</a>
+            </li>
+        </ul>
+    </nav>
+    

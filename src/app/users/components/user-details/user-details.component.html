@@ -1,0 +1,11 @@
+<app-user-menu></app-user-menu>
+
+<div class="card" *ngIf="user">
+        <img src="{{ user.avatar_url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ user.name }}</h5>
+          <a
+            routerLink="/users/remove" 
+            class="btn btn-danger">Usuń konto</a>
+        </div>
+      </div>
