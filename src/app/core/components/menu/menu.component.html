@@ -7,11 +7,17 @@
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-link text-white">Strona główna</a>
         </li>
-        <li>
+        <li *ngIf="!isUserLoggedIn">
             <a routerLink="/users/register" routerLinkActive="bg-danger" class="nav-link text-white">Zarejestruj się</a>
         </li>
-        <li>
+        <li *ngIf="!isUserLoggedIn">
             <a routerLink="/users/login" routerLinkActive="bg-danger" class="nav-link text-white">Zaloguj się</a>
+        </li>
+        <li *ngIf="isUserLoggedIn">
+            <a routerLink="/users/profile" routerLinkActive="bg-danger" class="nav-link text-white">Profil</a>
+        </li>
+        <li *ngIf="isUserLoggedIn">
+                <a routerLink="/users/logout" routerLinkActive="bg-danger" class="nav-link text-white">Wyloguj</a>
         </li>
     </ul>
 </nav>

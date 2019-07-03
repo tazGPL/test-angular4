@@ -4,11 +4,14 @@ import { IUser } from '../interfaces/user.interface';
 import { environment } from 'src/environments/environment';
 import { IUserCredentials } from '../interfaces/user-credentials';
 import { IUserList } from '../interfaces/user-list';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
+
+  $user = new BehaviorSubject(null);
 
   constructor(
     private http: HttpClient
@@ -29,5 +32,14 @@ export class UsersService {
       status: Boolean(authUser),
       ...authUser
     }
+
+  }
+
+  auth(authResponse) {
+      this.$user.next(authResponse);
+  }
+
+  logout() {
+    this.$user.next(null);
   }
 }

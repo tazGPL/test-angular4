@@ -34,6 +34,7 @@ export class LoginPageComponent implements OnInit {
       const authResponse = await this.usersService.login(this.user);
 
       if (authResponse.status) {
+        this.usersService.auth(authResponse);
         this.router.navigate(['users', 'profile']);
       } else {
         this.loginError  = 'Wpisz poprawne dane do logowania';
