@@ -8,19 +8,23 @@
 
 <form [formGroup]="registerForm" (submit)="onSubmit()" *ngIf="!registrationSuccess">
     <div class="form-group">
-        <input type="text" class="form-control" formControlName="name" name="name" placeholder="name">
+        <input type="text" class="form-control" [class.is-invalid]="name.invalid && name.dirty" formControlName="name" name="name" placeholder="name">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" formControlName="email" name="email" placeholder="email">
+        <input type="text" class="form-control" [class.is-invalid]="email.invalid && email.dirty" formControlName="email" name="email" placeholder="email">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" formControlName="password" name="password" placeholder="password">
+        <input type="text" class="form-control" [class.is-invalid]="password.invalid && password.dirty" formControlName="password" name="password" placeholder="password">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" formControlName="confirmPassword" name="confirmPassword" placeholder="confirmPassword">
+        <input type="text" class="form-control" [class.is-invalid]="confirmPassword.invalid && confirmPassword.dirty" formControlName="confirmPassword" name="confirmPassword" placeholder="confirmPassword">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" formControlName="avatarUrl" name="avatarUrl" placeholder="avatarUrl">
+        <input type="text" class="form-control" [class.is-invalid]="avatarUrl.invalid && avatarUrl.dirty" formControlName="avatarUrl" name="avatarUrl" placeholder="avatarUrl">
     </div>
-    <button class="btn btn-primary">Zarejestruj się</button>
+
+    <button class="btn btn-primary"
+            [disabled]="registerForm.invalid"
+        >Zarejestruj się</button>
+
 </form>

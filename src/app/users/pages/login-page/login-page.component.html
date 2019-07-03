@@ -6,11 +6,14 @@
 
 <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
     <div class="form-group">
-        <input type="text" class="form-control" [(ngModel)]="user.email" name="email" placeholder="email">
+        <input type="text" class="form-control" [class.is-invalid]="email.invalid && email.dirty" [(ngModel)]="user.email" required name="email" #email="ngModel" placeholder="email">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" [(ngModel)]="user.password" name="password" placeholder="password">
+        <input type="text" class="form-control" [class.is-invalid]="password.invalid && password.dirty" [(ngModel)]="user.password" required name="password" #password="ngModel" placeholder="password">
     </div>
 
-    <button class="btn btn-primary">Zaloguj</button>
+    <button class="btn btn-primary"
+        [disabled]="loginForm.invalid"
+    >Zaloguj</button>
+
 </form>
