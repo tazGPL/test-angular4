@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../../services/users.service';
 import { Router } from '@angular/router';
+import { StorageService } from 'src/app/shared/services/storage.service';
 
 @Component({
   selector: 'app-login-page',
@@ -20,7 +21,8 @@ export class LoginPageComponent implements OnInit {
 
   constructor(
     private usersService: UsersService,
-    private router: Router
+    private router: Router,
+    private storage: StorageService
   ) { }
 
   ngOnInit() {
