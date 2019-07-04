@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IPostList } from 'src/app/posts/interfaces/post-list.interface';
 import { PostsService } from 'src/app/posts/services/posts.service';
+import { IPost } from 'src/app/posts/interfaces/post.interface';
+
+
 
 @Component({
   selector: 'app-home-page',
@@ -26,6 +29,16 @@ export class HomePageComponent implements OnInit {
 
   async setupPosts() {
     this.posts = await this.postsService.getPosts();
+  }
+
+  async onAddPost(post: IPost) {
+    console.log('onAddPost', post);
+    this.posts.unshift(post);
+    try {
+      await this.postsService.addPost(post);
+    } catch (err) {
+      console.warn(err)
+    }
   }
 
 }

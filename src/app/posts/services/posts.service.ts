@@ -4,6 +4,7 @@ import { IPostList } from '../interfaces/post-list.interface';
 import { environment } from 'src/environments/environment';
 
 import { map } from 'rxjs/operators';
+import { IPost } from '../interfaces/post.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -15,11 +16,7 @@ export class PostsService {
   ) { }
 
   getPosts() {
-    return this.http.get<{ posts: IPostList }>(environment.postsUrl)
-    .pipe(
-      map(response => response.posts)
-    )
-    .toPromise();
+    return this.http.get<IPostList>(environment.postsUrl).toPromise();
   }
 
   async getPostById(postId: string) {
@@ -27,5 +24,9 @@ export class PostsService {
     return posts.find((post) => {
         return post.id === postId;
     });
+  }
+
+  addPost(post: IPost) {
+    return this.http.post(environment.postsUrl, post).toPromise();
   }
 }

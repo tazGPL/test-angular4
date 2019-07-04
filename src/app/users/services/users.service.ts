@@ -56,4 +56,9 @@ export class UsersService {
       this.$user.next(user);
     }
   }
+
+
+  getUser(): IUser {
+    return this.$user.getValue();
+  }
 }

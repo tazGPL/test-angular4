@@ -1,9 +1,9 @@
 <div  class="card my-3" appHighlight>
 
-  <div class="card-header">
+  <div class="card-header d-flex">
 
     <img [src]="post.author?.avatar_url" class="avatar mr-3" alt="">
-      <div class="card-header d-flex">
+    <div>
       <h5 class="card-title">{{ post.author.name }}</h5>
       <a routerLink="/posts/{{ post.id }}">
         <small>{{ post.created_time | myDate }}</small>
